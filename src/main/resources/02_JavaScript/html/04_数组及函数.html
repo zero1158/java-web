@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_数组</title>
+</head>
+<body>
+    <script>
+        var arr1 = [12,"abc",null];
+        alert(arr1.length);
+        //创建指定长度的数组
+        var arr2 = new Array(5);
+        alert(arr2.length);
+        arr2[8] = "aaa";
+        //javaScript 语言中的数组，只要我们通过数组下标赋值，那么最大的下标值，就会自动的给数组做扩容操作。
+        alert(arr2.length); //9
+        //没有赋值的下标为undefined
+        alert(arr2[6]);
+
+    </script>
+</body>
+</html>

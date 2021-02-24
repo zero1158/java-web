@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_js的使用方式</title>
+    <!--
+        1.在 head标签中,或者在body标签中,使用script标签来书写JavaScript代码
+        2.使用script标签来引入单独的js文件
+        注意 : 1.不能在同一个script标签中使用上述两种方式
+               2.当两者同时存在的时候(多个script标签),在head标签中的会依次执行
+    -->
+    <script>
+        alert("在-----head-----标签中的js语句!")
+    </script>
+    <script type="text/javascript" src="../js/01_js.js"/>
+</head>
+<body>
+这是一个JavaScript操作html页面的文件
+<script>
+    alert("在+++body+++标签中的js语句 !")
+</script>
+
+</body>
+</html>

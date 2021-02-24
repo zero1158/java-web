@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_函数</title>
+</head>
+<body>
+    <script>
+        /**
+         * 注：在 Java 中函数允许重载。但是在 JS 中函数的重载会直接覆盖掉上一次的定义
+         */
+        //定义函数方式一 :
+        function fun1(){
+            alert("定义的第一个函数!");
+        }
+        fun1() //函数只有被调用后才会执行
+
+        function fun2(a,b) {
+            alert("这是一个有参函数 a = "+a+"; b = "+b);
+        }
+        fun2(12,"abc");
+
+        function sum(a,b) {
+            return a+b;
+        }
+        alert(sum(100,50));
+
+        //定义函数方式二 :
+        var f1 = function () {
+            alert("方式二定义无参函数")
+        }
+        var f2 = function (a,b) {
+            alert("方式二定义有参函数 a = "+a+"; b = "+b)
+        }
+        var f3 = function (a,b) {
+            return a+b;
+        }
+        f1();
+        f2(1,6);
+        alert(f3(10,20));
+
+        /**
+         * 函数的 arguments 隐形参数（只在 function 函数内）
+         * 就是在 function 函数中不需要定义，但却可以直接用来获取所有参数的变量。我们管它叫隐形参数。
+         */
+        var a = function () {
+            alert(arguments[0]);
+            alert(arguments[1]);
+            alert(arguments[2]);
+        }
+        a();
+    </script>
+</body>
+</html>

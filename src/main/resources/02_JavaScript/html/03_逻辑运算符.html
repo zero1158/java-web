@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_逻辑运算符</title>
+    <!--
+        在 JavaScript 语言中，所有的变量，都可以做为一个 boolean 类型的变量去使用
+        0 、null、 undefined、""(空串) 都认为是 false
+    -->
+    <script>
+        var a = "abc";
+        var b = 12;
+        var c = null;
+        var d = false;
+
+        if (a){
+            alert("a变量是个真");
+        }else {
+            alert("a变量是个假");
+        }
+        if (b){
+            alert("b变量是个真");
+        }else {
+            alert("b变量是个假");
+        }
+        if (c){
+            alert("c变量是个真");
+        }else {
+            alert("c变量是个假");
+        }
+        if (d){
+            alert("d变量是个真");
+        }else {
+            alert("d变量是个假");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        /* && 且运算。有两种情况：
+        第一种：当表达式全为真的时候。返回最后一个表达式的值。
+        第二种：当表达式中，有一个为假的时候。返回第一个为假的表达式的值*/
+        alert(a && b);
+        alert(c && a);
+
+        /* || 或运算
+        第一种情况：当表达式全为假时，返回最后一个表达式的值
+        第二种情况：只要有一个表达式为真。就会把回第一个为真的表达式的值*/
+        alert(d || c);
+        alert(b || c);
+    </script>
+</body>
+</html>
