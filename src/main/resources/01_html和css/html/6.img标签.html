@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6.img标签.html</title>
+</head>
+<body>
+<!--需求 1：使用 img 标签显示一张美女的照片。并修改宽高，和边框属性
+    在web中的相对路径和绝对路径
+        相对路径:
+            .      表示当前文件所在目录
+            ..     表示当前文件所在的上一级目录
+            文件名  表示当前文件所在的目录的文件,相当于./文件没,./可以省略
+        绝对路径:  http://ip:port/工程名/资源路径
+    在java中的相对路径和绝对路径
+        相对路径:从工程名开始算
+        绝对路径:从盘符开始算
+-->
+
+<!--
+border:边框效果
+alt : 当图片路径找不到时,代替展示的文本
+-->
+    <img src="../css/0.jpg" width="200" height="260" border="1">
+    <img src="../imgs/1.jpg" width="200" height="260" border="1">
+    <img src="../imgs/2.jpg" width="200" height="260" border="1">
+    <img src="../imgs/22222.jpg" width="200" height="260" border="1" alt="图片找不到啦">
+    <img src="../imgs/3.jpg" width="200" height="260" border="1">
+    <img src="./5.jpg" width="200" height="260" border="1">
+</body>
+</html>

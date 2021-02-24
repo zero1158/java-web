@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11.表单提交</title>
+</head>
+<body>
+    <!--
+        form标签是一个表单标签
+        action:要跳转的链接路径
+        method:指定的方法,get(默认) ; post
+        表单提交的时候,数据没有发送给服务器的三种情况:
+            1.表单项中没有name属性
+            2.单选,复选,下拉框(每个option标签都要加) 都要添加value属性,否在提交的都是on
+            3.表单项不在form标签内
+    -->
+    <form action="www.baidu.com" method="get">
+        <table>
+            <h1>这是一个表单提交页面</h1>
+            <tr>
+                <td>用户名 ：</td>
+                <td>
+                    <input type="text" maxlength="5" value="用户名" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>密码 : </td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>性别 : </td>
+                <td>
+                    <input type="radio" name="sex" checked="checked" value="man"> 男
+                    <input type="radio" name="sex" value="woman"> 女
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    兴趣爱好 :
+                </td>
+                <td>
+                    <input type="checkbox" name="happy" value="java"> Java <br/>
+                    <input type="checkbox" name="happy" value="ai" checked="checked"> AI <br/>
+                    <input type="checkbox" name="happy" value="go"> GO <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>国籍 : </td>
+                <td>
+                    <select name="contry">
+                        <option>---请选国籍---</option>
+                        <option value="ch" selected="selected">---中国---</option>
+                        <option value="usa">---美国---</option>
+                        <option value="jp">---日本---</option>
+                        <option value="bz">---韩国---</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我评价 : </td>
+                <td>
+                    <textarea name="desc" rows="10" cols="20">这是一个默认值</textarea><br/>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="reset" value="这是一个重置按钮"><br/>
+                </td>
+                <td>
+                    <input type="file" value="文件提交"><br/>
+                </td>
+                <td align="center">
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
