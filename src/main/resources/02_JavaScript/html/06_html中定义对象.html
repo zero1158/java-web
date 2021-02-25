@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06_定义对象</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //定义对象 : Object 形式的自定义对象
+        // var 变量名 = new Object(); // 对象实例（空对象）
+        // 变量名.属性名 = 值; // 定义一个属性
+        // 变量名.函数名 = function(){} // 定义一个函数
+        var obj = new Object();
+        obj.name = "小明";
+        obj.age = 15;
+        obj.fun = function(){
+           alert("姓名 :"+this.name + ", 年龄 :" + this.age) ;
+        }
+        obj.fun();
+
+        //定义对象 : {}花括号形式的自定义对象
+        /**
+         * 对象的定义：
+         var 变量名 = { // 空对象
+            属性名：值, // 定义一个属性
+            属性名：值, // 定义一个属性
+            函数名：function(){} // 定义一个函数
+            };
+         */
+        var object = {
+            name : "小华",
+            age : 16,
+            fun : function () {
+                alert("name :"+this.name+"; age :"+this.age);
+            }
+        }
+        object.fun();
+    </script>
+</body>
+</html>
